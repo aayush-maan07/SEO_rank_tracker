@@ -234,13 +234,13 @@ export default function RankDetail() {
         return "text-danger";
     };
 
-    const getPositionBgClass = (pos: number | null) => {
-        if (pos === null) return "bg-muted border-border text-muted-foreground";
-        if (pos <= 3) return "rank-badge-top3";
-        if (pos <= 10) return "rank-badge-top10";
-        if (pos <= 20) return "rank-badge-top20";
-        return "rank-badge-low";
-    };
+    // const getPositionBgClass = (pos: number | null) => {
+    //     if (pos === null) return "bg-muted border-border text-muted-foreground";
+    //     if (pos <= 3) return "rank-badge-top3";
+    //     if (pos <= 10) return "rank-badge-top10";
+    //     if (pos <= 20) return "rank-badge-top20";
+    //     return "rank-badge-low";
+    // };
 
     useEffect(() => {
         (async () => await fetchTracking())();
